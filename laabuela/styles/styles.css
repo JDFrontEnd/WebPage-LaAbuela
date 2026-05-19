@@ -1,0 +1,78 @@
+/* colores
+
+    Fondo crema #fdf6e7
+
+    marron vivido #a43c0a
+
+    naranja piel #f7d0aa
+
+    verde oliva apagado #80784e
+
+    cafe a6653d
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdf6e7;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #80784e;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #a43c0a;
+}
+
+img {
+  max-width: 100%;
+  max-height: 10em;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  color: #a43c0a;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+  .logo {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .nav {
+    display: inline-block;
+    width: 50%;
+  }
