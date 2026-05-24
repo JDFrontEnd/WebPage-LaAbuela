@@ -18,6 +18,7 @@
 }
 
 body {
+  margin: 0;
   background-color: #fdf6e7;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -57,20 +58,22 @@ h1, h2, h3 {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
   padding: 1rem;
-  color: #fff;
-}
-
-  .logo {
-    display: inline-block;
-    width: 50%;
-  }
+  background-color: lightcoral;
+} 
 
   .nav {
-    display: inline-block;
-    width: 50%;
+    background-color: tomato;
   }
+
+    .navbar {
+      background-color: #cf7a52;
+    }
+
+      .nav-item {
+        background-color: #f7d0aa;
+      }
+
+        .nav-link {
+          background-color: #35251c;
+        }
