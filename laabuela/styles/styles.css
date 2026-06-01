@@ -32,6 +32,7 @@ body {
 
 ul, ol {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -54,30 +55,40 @@ h1, h2, h3 {
 }
 
 .header {
-  width: 90%;
-  height: 10vh;
-  padding: 1em;
+  width: 100%;
+  padding: 1rem 0;
 } 
 
   .nav {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
+    width: 60%;
   }
 
     .nav-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1em;
-      min-width: 70%;
-      height: 100%;
+      gap: 1em;
     }
 
-      /* .nav-item {
-        background-color: #f7aad1;
+      .nav-item {
+        margin-right: 1em;
+      }
+
+      /* .nav-item__1 {
+        background-color: #f7d0aa;
+      }
+
+      .nav-item__2 {
+        background-color: #a43c0a;
+      }
+
+      .nav-item__3 {
+        background-color: #f7aad1;      
       } */
 
         .nav-link {
+          display: inline-block;
           font-size: 1.7rem;
           color: black;
           font-weight: 400;
@@ -85,15 +96,16 @@ h1, h2, h3 {
 
 .hero {
   display: flex;
+  align-content: center;
   align-items: center;
-  width: 90%;
-  min-height: 100vh;
+  height: 100vh;
+  border: 1px solid red;
 }
 
   .hero-image {
     display: block;
     width: 40%;
-    height: 68vh;
+    height: auto;
   }
 
   .hero-divider {
@@ -101,9 +113,7 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: 70vh;
-    padding: 2em;
+    padding: 1em;
   }
 
     .hero-title {
@@ -132,3 +142,42 @@ h1, h2, h3 {
         color: #a43c0a;
         background-color: #f7d0aa;
       }
+
+
+      /* Responsive */
+@media (max-width: 768px) {
+      .nav {
+        width: 100%;
+      } 
+
+      .nav-bar {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero {
+        flex-direction: column;
+        gap: 1em;
+        padding-top: 5em;
+        height: 80vh;
+      }
+
+      .hero-divider {
+        padding: 0;
+      }
+
+        .hero-image {
+          width: 80%;
+        }
+
+        .hero-title {
+          margin: 0.1em 0;
+          font-size: 2rem;
+        }
+
+        .hero-description {
+          font-size: 1.2rem;
+        }
+}
