@@ -26,7 +26,6 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 600;
-  color: #80784e;
   background-color: #fdf6e7;
 }
 
@@ -51,12 +50,11 @@ h1, h2, h3 {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 600;
-  color: #a43c0a;
 }
 
 .header {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5em 0;
 } 
 
   .nav {
@@ -69,10 +67,11 @@ h1, h2, h3 {
       justify-content: space-between;
       align-items: center;
       gap: 1em;
+      margin-right: 1em;
     }
 
       .nav-item {
-        margin-right: 1em;
+        margin-right: 2.3em;
       }
 
       /* .nav-item__1 {
@@ -89,7 +88,7 @@ h1, h2, h3 {
 
         .nav-link {
           display: inline-block;
-          font-size: 1.7rem;
+          font-size: 1.8rem;
           color: black;
           font-weight: 400;
         }
@@ -106,6 +105,7 @@ h1, h2, h3 {
     display: block;
     width: 40%;
     height: auto;
+    margin-left: 2em;
   }
 
   .hero-divider {
@@ -117,13 +117,15 @@ h1, h2, h3 {
   }
 
     .hero-title {
-      margin: 1em 0;
+      margin: 0.3em 0;
+      color: #a43c0a;
       font-size: 3.9rem;
     }
 
     .hero-description {
       margin: 0;
-      font-size: 1.7rem;
+      font-size: 2rem;
+      font-weight: 400;
     }
 
     .btn-hero {
@@ -142,6 +144,82 @@ h1, h2, h3 {
         color: #a43c0a;
         background-color: #f7d0aa;
       }
+
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 2em 4em;
+  background-color: #f7d0aa;
+}
+
+  .recipes {
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 60%;
+  }
+
+    .recipes-title {
+      display: block;
+      font-size: 3.5rem;
+      text-align: center;
+      color: #a43c0a;
+    }
+
+    .recipes-card {
+      padding: .5em;
+      text-align: center;
+      border-radius: 20px;
+      background-color: #fdf6e7;
+      box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+      .recipes-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .recipes-title__card {
+        margin: 0.1em;
+        font-size: 1.25rem;
+      }
+
+      .recipes-description {
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+  .filter-menu {
+    width: 20%;
+    padding: 1em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       /* Responsive */
